@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Project Name - описание">
+
+<!-- используйте только для шрифта находящегося на первом экране -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>ProjectName — Главная</title>
+</head>
+<body>
+<div style="display: none;">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol><symbol id="star" viewBox="0 0 20 19">
+<path d="M10.2013 0.306L12.6793 6.171L19.0233 6.716C19.4633 6.754 19.6423 7.303 19.3083 7.592L14.4963 11.761L15.9383 17.963C16.0383 18.394 15.5713 18.733 15.1933 18.504L9.74128 15.216L4.28928 18.504C3.91028 18.732 3.44428 18.393 3.54428 17.963L4.98628 11.761L0.173282 7.591C-0.160718 7.302 0.0172817 6.753 0.458282 6.715L6.80228 6.17L9.28028 0.306C9.45228 -0.102 10.0293 -0.102 10.2013 0.306Z" fill="#EF5252"/>
+</symbol></svg>
+</div>
+
+<div class="wrapper">
+  <header class="header ">
+  <div class="header__wrapper">
+    <a class="header__logo"  aria-label="Переход на главную">
+      BrightSmile Veneers</a>
+  </div>
+</header>
+
+
+<main>
+  <div class="container">
+    <section class="product-item">
+  <div class="product-slider">
+  <!-- Swiper -->
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture class="slider-image">
+          <!--[if IE 9]>
+          <video style="display: none;"><![endif]-->
+<!--          <source type="image/avif" media="(min-width: 1440px)" srcset="-->
+<!--                   ./img/content/guide-img-main__desk.avif-->
+<!--                  ">-->
+<!--          <source type="image/avif" srcset="-->
+<!--                    ./img/slides/slide-2__mob.avif-->
+<!--                  ">-->
+          <source type="image/webp" media="(min-width: 1440px)" srcset="
+                   ./img/slides/slide-1__desk.webp
+                  ">
+          <source type="image/webp" srcset="
+                    ./img/slides/slide-1__mob.webp
+                  ">
+
+          <source media="(min-width: 1440px)" srcset="
+                    ./img/slides/slide-1__desk.jpg
+                  ">
+          <!--[if IE 9]>
+          <video style="display: none;"><![endif]-->
+          <img src="./img/slides/slide-1__mob.jpg" alt="Быстрая установка, сильная фиксация>"
+               class="slider-image">
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture class="slider-image">
+          <!--[if IE 9]>
+          <video style="display: none;"><![endif]-->
+          <source type="image/webp" media="(min-width: 1440px)" srcset="
+                   ./img/slides/slide-2__desk.webp
+                  ">
+          <source type="image/webp" srcset="
+                    ./img/slides/slide-2__mob.webp
+                  ">
+
+          <source media="(min-width: 1440px)" srcset="
+                    ./img/slides/slide-2__desk.jpg
+                  ">
+          <!--[if IE 9]>
+          <video style="display: none;"><![endif]-->
+          <img src="../img/slides/slide-2__mob.jpg" alt="Девушка"
+               class="slider-image">
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture class="slider-image">
+          <!--[if IE 9]>
+          <video style="display: none;"><![endif]-->
+          <source type="image/webp" media="(min-width: 1440px)" srcset="
+                   ./img/slides/slide-3__desk.webp
+                  ">
+          <source type="image/webp" srcset="
+                    ./img/slides/slide-3__mob.webp
+                  ">
+
+          <source media="(min-width: 1440px)" srcset="
+                    ./img/slides/slide-3__desk.jpg
+                  ">
+          <!--[if IE 9]>
+          <video style="display: none;"><![endif]-->
+          <img src="../img/slides/slide-3__mob.jpg" alt="Девушка"
+               class="slider-image">
+        </picture>
+      </div>
+    </div>
+
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(../img/slides/slide-1-thumb__mob.jpg); background-repeat: no-repeat;"></div>
+      <div class="swiper-slide" style="background-image:url(../img/slides/slide-2-thumb__mob.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(../img/slides/slide-3-thumb__mob.jpg)"></div>
+    </div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+
+
+
+  <div class="product-info">
+  <div class="wrapper">
+    <h1 class="product-info__title title">BrightSmile Veneers</h1>
+    <h2 class="product-info__subtitle subtitle">Вы будете улыбаться ярко!</h2>
+    <p class="product-info__text text">Удобные и практичные виниры по отличной цене! Оформите заказ прямо сейчас и оплатите товар при получении.</p>
+
+    <div class="product-info__statistics">
+      <div class="product-rating">
+        <svg width="19" height="19">
+          <use xlink:href="#star"></use>
+        </svg>
+        <svg width="19" height="19">
+          <use xlink:href="#star"></use>
+        </svg>
+        <span>2,7</span></div>
+      <div class="product-reviews">170 отзывов</div>
+      <div class="product-orders">302 заказ(ов)</div>
+    </div>
+    <span class="product-info__delivery">Бесплатная доставка</span>
+    <div class="product-price">
+      <span class="product-price__value">49,00 €</span>
+      <span class="product-price__old">52 €</span>
+      <span class="product-price__discount">-5%</span>
+    </div>
+    <div class="product-discount">
+      <p class="product-discount__description">Скидка заканчивается через:</p>
+      <div class="product-timer">
+        <span class="product-timer__hours product-timer__item">00</span>
+        <span class="product-timer__minutes product-timer__item">55</span>
+        <span class="product-timer__seconds product-timer__item">11</span>
+      </div>
+    </div>
+    <div class="product-quantity">
+      <label for="quantity__field">Количество:</label>
+      <div class="product-quantity__controls">
+        <button type="button" class="control-button reduce">-</button>
+        <input type="number" class="product-quantity__field" id="quantity__field" min="0" value="1">
+        <button type="button" class="control-button increase">+</button>
+      </div>
+    </div>
+  </div>
+  <form class="product-buy">
+    <button class="product-buy__button" type="button"><span class="button-text">купить сейчас</span> <span class="button-price">49,00 €</span><span class="button-oldPrice">52 €</span></button>
+  </form>
+
+</div>
+
+
+</section>
+
+
+
+
+    <section class="manual">
+  <h2 class="manual__title title-h2">Инструкция по установке <b>BrightSmile</b></h2>
+
+  <picture class="manual-image">
+    <!--[if IE 9]>
+<!--    <video style="display: none;"><![endif]&ndash;&gt;-->
+<!--    <source type="image/avif" media="(min-width: 1440px)" srcset="-->
+<!--                   ./img/content/guide-img-main__desk.avif-->
+<!--                  ">-->
+<!--    <source type="image/avif" srcset="-->
+<!--                    ./img/content/guide-img-main__mob.avif-->
+<!--                  ">-->
+
+
+    <source type="image/webp" media="(min-width: 1440px)" srcset="
+                   ./img/content/guide-img-main__desk.webp
+                  ">
+    <source type="image/webp" srcset="
+                    ./img/content/guide-img-main__mob.webp
+                  ">
+
+    <source media="(min-width: 1440px)" srcset="
+                   ./img/content/guide-img-main__desk.jpg
+                  ">
+    <!--[if IE 9]>
+    <video style="display: none;"><![endif]-->
+    <img src="./img/content/guide-img-main__mob.jpg" alt="Девушка"
+         class="manual-image">
+  </picture>
+
+  <ul class="manual__list">
+    <li class="manual__item manual__item--step-1">
+      <span class="item-count">1</span>
+      <p class="manual__text">Поместите виниры в емкость с теплой водой</p>
+    </li>
+    <li class="manual__item manual__item--step-2">
+      <span class="item-count">2</span>
+      <p class="manual__text">Через 10 минут достаньте их и обсушите салфеткой</p>
+    </li>
+    <li class="manual__item manual__item--step-3">
+      <span class="item-count">3</span>
+      <p class="manual__text">Установите виниры на зубы, плотно придавливая руками</p>
+    </li>
+    <li class="manual__item manual__item--step-4">
+      <span class="item-count">4</span>
+      <p class="manual__text">Очищайте виниры 2 раза в день обычной зубной пастой
+      </p>
+    </li>
+  </ul>
+</section>
+
+  </div>
+</main>
+</div>
+
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
